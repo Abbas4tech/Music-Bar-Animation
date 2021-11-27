@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+main {
+  height: 100vh;
+  width: 100%;
+}
+#container {
+  width: 575px;
+  height: 175px;
+
+  display: flex;
+
+  position: absolute;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: rgb(56, 39, 39);
+
+  border-radius: 60px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  margin: 20px 30px;
+  margin-left: 0;
+}
+#boxes {
+  display: flex;
+  flex-direction: row;
+
+  margin: 30px;
+  margin-right: 10px;
+}
+.box {
+  width: 15px;
+  height: 20px;
+  border-radius: 5px;
+
+  margin: 2px;
+
+  background-color: yellow;
+
+  animation: stretch 900ms infinite;
+}
+.box:nth-of-type(2) {
+  animation-delay: 200ms;
+}
+.box:nth-of-type(3) {
+  animation-delay: 400ms;
+}
+.box:nth-of-type(4) {
+  animation-delay: 600ms;
+}
+.box:nth-of-type(5) {
+  animation-delay: 800ms;
+}
+
+.text {
+  margin: 5px 10px;
+  padding: 0 10px;
+
+  font-size: 24px;
+
+  color: #fff;
+}
+@keyframes stretch {
+  0% {
+    transform: scaleY(100%);
+  }
+  50% {
+    transform: scaleY(250%);
+  }
+  100% {
+    transform: scaleY(100%);
+  }
+}
