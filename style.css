@@ -84,3 +84,35 @@ main {
     transform: scaleY(100%);
   }
 }
+
+/* ====================Media Queries for Mobile Devices================= */
+
+@media only screen and (max-width: 480px) {
+  
+  #container {
+    width: 300px;
+    height: 100px;
+
+    border-radius: 35px;
+  }
+  .flex {
+    margin: 0;
+  }
+  #boxes {
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+  .box {
+    width: 8px;
+    height: 10px;
+    border-radius: 2.5px;
+
+    margin: 1px;
+  }
+  .text {
+    margin: 2px 5px;
+    padding: 0 5px;
+
+    font-size: 12px;
+  }
+}
